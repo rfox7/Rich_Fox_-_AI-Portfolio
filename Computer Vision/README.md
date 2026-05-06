@@ -3,7 +3,7 @@
 **Course:** ITAI 1378 — Comp Vision-Artificial Inte 
 **Institution:** Houston City College  
 **Program:** Applied AI & Robotics  
-**Instructor:** [Hardik Gohel](https://www.linkedin.com/in/hardik-gohel-researcher/)
+**Instructor:** [Hardik Gohel](https://www.linkedin.com/in/hardik-gohel-researcher/)  
 **Academic Year:** 2025–2026
 
 ---
