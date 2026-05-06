@@ -1,9 +1,9 @@
 # Rich Fox — AI & Computer Vision Portfolio
 
-**Course:** ITAI 1378 — Applied AI & Computer Vision  
-**Institution:** Houston Community College  
+**Course:** ITAI 1378 — Comp Vision-Artificial Inte 
+**Institution:** Houston City College  
 **Program:** Applied AI & Robotics  
-**Instructor:** Patricia McManus  
+**Instructor:** [Hardik Gohel](https://www.linkedin.com/in/hardik-gohel-researcher/)
 **Academic Year:** 2025–2026
 
 ---
@@ -275,17 +275,6 @@ For comprehensive learning paths, see **COURSE_INDEX.md** → "For Future Study"
 | Lab 11: Tracking | ✅ Complete | Lab_11/ |
 | **Final Project** | 🔄 In Progress | Object_Detection_Project/ |
 | **Documentation** | ✅ Complete | (this folder) |
-
----
-
-## 🙏 Course Information
-
-- **Course:** ITAI 1378 — Applied AI & Computer Vision
-- **Institution:** Houston Community College
-- **Program:** Applied AI & Robotics
-- **Instructor:** Patricia McManus
-- **Student:** Rich Fox
-- **Academic Year:** 2025–2026
 
 ---
 
