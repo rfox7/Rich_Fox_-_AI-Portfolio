@@ -1,6 +1,6 @@
 # Rich Fox — AI & Robotics Portfolio
 
-**Program:** Applied AI & Robotics | Houston Community College  
+**Program:** Applied AI & Robotics | Houston City College  
 **Student:** Rich Fox  
 **Portfolio Updated:** May 6, 2026
 
