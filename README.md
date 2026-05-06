@@ -12,6 +12,16 @@ This portfolio documents my comprehensive education in artificial intelligence a
 
 ---
 
+## 📞 Contact & Links
+
+| Platform | Link |
+|---|---|
+| **GitHub** | [Rich Fox AI Portfolio](https://github.com/rfox7/Rich_Fox_-_AI-Portfolio) |
+| **LinkedIn** | [Rich Fox](https://www.linkedin.com/in/rich-fox-b952a85/) |
+| **Email** | [rfox72@gmail.com](rfox72@gmail.com) |
+
+---
+
 ## 📚 What's Inside
 
 ### 🖼️ **Computer Vision (ITAI 1378)**
@@ -270,15 +280,6 @@ Each course has master documents:
 
 ---
 
-## 📞 Contact & Links
-
-| Platform | Link |
-|---|---|
-| **GitHub** | [Rich Fox AI Portfolio](https://github.com/rfox7/Rich_Fox_-_AI-Portfolio) |
-| **LinkedIn** | [Your LinkedIn Profile] |
-| **Email** | [Your Email] |
-
----
 
 ## 🎯 Next Steps
 
