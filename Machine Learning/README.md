@@ -3,7 +3,7 @@
 **Course:** ITAI 1371 — Machine Learning  
 **Institution:** Houston City College  
 **Program:** Applied AI & Robotics  
-**Instructor:** [Sina Nazifi](https://www.linkedin.com/in/sinanazifi/)
+**Instructor:** [Sina Nazifi](https://www.linkedin.com/in/sinanazifi/)  
 **Academic Year:** 2025–2026
 
 ---
