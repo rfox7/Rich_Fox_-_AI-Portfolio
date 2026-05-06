@@ -1,9 +1,9 @@
 # Rich Fox — Machine Learning Portfolio
 
 **Course:** ITAI 1371 — Machine Learning  
-**Institution:** Houston Community College  
+**Institution:** Houston City College  
 **Program:** Applied AI & Robotics  
-**Instructor:** TBD  
+**Instructor:** [Sina Nazifi](https://www.linkedin.com/in/sinanazifi/)
 **Academic Year:** 2025–2026
 
 ---
@@ -271,15 +271,6 @@ Each lab folder contains detailed documentation with:
 
 ---
 
-## 🙏 Course Information
-
-- **Course:** ITAI 1371 — Machine Learning
-- **Institution:** Houston Community College
-- **Program:** Applied AI & Robotics
-- **Student:** Rich Fox
-- **Academic Year:** 2025–2026
-
----
 
 **Portfolio Created:** May 2026  
 **Documentation Status:** Complete ✅  
