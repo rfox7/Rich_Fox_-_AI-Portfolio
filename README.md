@@ -1,6 +1,6 @@
 # Rich Fox — Applied AI Portfolio
 
-> **Houston Community College | Applied AI & Robotics Program**  
+> **Houston City College | Applied AI & Robotics Program**  
 > **GitHub:** [github.com/rfox7/Rich_Fox_-_AI-Portfolio](https://github.com/rfox7/Rich_Fox_-_AI-Portfolio)
 
 ---
@@ -15,7 +15,7 @@ I am an Applied AI student at Houston Community College, specializing in Machine
 
 | Category | Tools & Libraries |
 |---|---|
-| Languages | Python 3 |
+| Languages | Python 3, SQL |
 | Machine Learning | Scikit-learn, NumPy, Pandas |
 | Deep Learning | TensorFlow, Keras, PyTorch |
 | Computer Vision | OpenCV, Matplotlib |
@@ -39,13 +39,6 @@ Rich_Fox_-_AI-Portfolio/
 │   │   └── Lab2/
 │   │       ├── README.md
 │   │       └── lab2_notebook.ipynb
-│   ├── Assignments/
-│   │   ├── Assignment1/
-│   │   │   ├── README.md
-│   │   │   └── assignment1_notebook.ipynb
-│   │   └── Assignment2/
-│   │       ├── README.md
-│   │       └── assignment2_notebook.ipynb
 │   └── Projects/
 │       ├── Midterm Project/
 │       │   ├── README.md
@@ -55,7 +48,14 @@ Rich_Fox_-_AI-Portfolio/
 │           └── final_notebook.ipynb
 │
 └── Computer Vision/
-    ├── README.md
+|   ├── README.md
+│   ├── Labs/
+│   │   ├── Lab1/
+│   │   │   ├── README.md
+│   │   │   └── lab1_notebook.ipynb
+│   │   └── Lab2/
+│   │       ├── README.md
+│   │       └── lab2_notebook.ipynb
     └── Object_Detection_Project/
         ├── README.md
         ├── object_detection.ipynb
