@@ -466,7 +466,6 @@ Professionalism:
 
 Created for: Rich Fox, Student at Houston Community College
 Course: ITAI 1378 — Applied AI & Computer Vision
-Instructor: Patricia McManus
 Academic Year: 2025-2026
 
 This portfolio represents a comprehensive learning journey from classical
@@ -479,7 +478,6 @@ For questions or updates, refer to:
   - Individual lab notebooks in the course
   - COURSE_INDEX.md for high-level concepts
   - Specific lab READMEs for technical details
-  - Instructor office hours for clarifications
 
 Good luck with your AI journey! 🚀
 
