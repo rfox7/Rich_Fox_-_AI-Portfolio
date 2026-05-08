@@ -103,7 +103,7 @@ Computer_Vision/
 | **9** | Perception-Reasoning-Action | Agents perceive, reason, and act | Lab_9/ |
 | **10** | Agent Frameworks | Tools, memory, workflow abstraction | Lab_10/ |
 | **11** | Object Tracking | Temporal understanding, zone analytics | Lab_11/ |
-| **Final** | Object Detection Project | Real-world capstone (in progress) | Object_Detection_Project/ |
+| **Final** | Object Detection Project | Real-world capstone  | Object_Detection_Project/ |
 
 ---
 
