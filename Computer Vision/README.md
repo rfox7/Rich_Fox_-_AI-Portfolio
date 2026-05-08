@@ -52,18 +52,18 @@ Computer_Vision/
 ├── Lab_11/                      ← Object Tracking & Zone Analytics
 │   └── README.md
 │
-└── Object_Detection_Project/    ← Final Capstone Project (In Progress)
-    ├── README.md                ← Project overview & proposal (TBD)
+└── Object_Detection_Project/    ← Final Capstone Project 
+    ├── README.md                ← Project overview & proposal 
     ├── Data
     │   └── README.md
     ├── Docs
     │   |── README.md
-    │   ├── COURSE_INDEX.md              ← Complete 12-lab course overview
-    │   ├── COURSE_INDEX.md              ← Complete 12-lab course overview
-    │   └── FILE_MANIFEST.txt            ← Detailed inventory of all files
-    |       └──Testing Results
+    │   ├── AL_Usage_Log.md             ← Documatation of AI Usage in Project
+    │   ├── MD_Fox_Rich_ITAI1378.pdf    ← Proposed project
+    │   └── Overview.png                ← Image of the project overview
+    |   └──Real-Time_License_Plate_Detection.pptx ← Power Point to be used for recorded demo
     └── Notebooks
-        └── license_plate_detector.ipynb
+        └── license_plate_detector.ipynb ← Actual project file.
 ```
 
 ---
