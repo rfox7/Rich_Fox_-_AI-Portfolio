@@ -458,9 +458,3 @@ The future of applied AI isn't about building bigger models. It's about:
 4. Creating AI that augments human capability, not replaces human judgment
 
 ---
-
-*Portfolio compiled: May 2026  
-All 12 labs documented | Final project pending  
-Instructor: Patricia McManus  
-Course: ITAI 1378 — Applied AI & Computer Vision  
-Institution: Houston Community College*
