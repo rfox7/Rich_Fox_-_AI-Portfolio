@@ -1,0 +1,12 @@
+names:
+- licence
+nc: 1
+roboflow:
+  license: CC BY 4.0
+  project: yolov8-anpr
+  url: https://universe.roboflow.com/license-plate-detection-chetl/yolov8-anpr/dataset/1
+  version: 1
+  workspace: license-plate-detection-chetl
+test: ../test/images
+train: ../train/images
+val: ../valid/images
