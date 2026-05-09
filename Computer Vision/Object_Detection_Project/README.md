@@ -31,6 +31,12 @@ While basic license plate detection is Tier 1, this project elevates to Tier 2 t
 
 ---
 
+## Video of Presentation
+
+[Real-Time License Plate Detection Recording](Real-Time License Plate Detection Recording.mp4)
+
+---
+
 ## 📋 Problem Statement
 
 Traditional traffic monitoring, toll collection, and security systems suffer from:
@@ -579,4 +585,4 @@ This project successfully implements a **Tier 2 advanced computer vision system*
 
 **Status:** ✅ **PROJECT COMPLETE**
 
-*[← Back to Computer Vision](../../README.md) | [← Back to Portfolio Home](../../../PORTFOLIO_README_FINAL.md)*
+*[← Back to Computer Vision](../../README.md) | [← Back to Portfolio Home](../../../README.md)*
