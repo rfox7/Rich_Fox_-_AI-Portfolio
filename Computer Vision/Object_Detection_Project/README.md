@@ -33,7 +33,7 @@ While basic license plate detection is Tier 1, this project elevates to Tier 2 t
 
 ## Video of Presentation
 
-[Real-Time License Plate Detection Recording](Real-Time License Plate Detection Recording.mp4)
+Link to: [Real-Time License Plate Detection Recording](https://drive.google.com/file/d/1FG94bX7seKrMSJvgdSLxn5gdSv1gjnEV/view?usp=sharing)
 
 ---
 
