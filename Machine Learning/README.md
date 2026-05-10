@@ -173,8 +173,8 @@ Real-world classification problem using UCI Heart Disease dataset. Demonstrates 
 
 **See:** `Midterm_Project/README.md`
 
-### **Final Project: TBD** 🔄
-Capstone project synthesizing all course concepts. In progress.
+### **Final Project: Movie Recommendation System** ✅
+Capstone project synthesizing all course concepts. A Bias-Corrected Hybrid Movie Recommendation System Using Collaborative Filtering and Genre Similarity
 
 **See:** `Final_Project/README.md`
 
@@ -213,10 +213,10 @@ Final Project: Capstone
 ## 📞 Navigation
 
 ### **Master Documents**
-- **ML_README.md** (this file) — Portfolio overview & structure
-- **ML_COURSE_INDEX.md** — Detailed 12-lab course guide ⭐ **START HERE**
-- **ML_FILE_MANIFEST.txt** — Complete file inventory
-- **ML_COMPLETION_SUMMARY.md** — Project completion status
+- **README.md** (this file) — Portfolio overview & structure
+- **COURSE_INDEX.md** — Detailed 12-lab course guide ⭐ **START HERE**
+- **FILE_MANIFEST.txt** — Complete file inventory
+- **COMPLETION_SUMMARY.md** — Project completion status
 
 ### **Lab Folders**
 Each lab folder contains detailed documentation with:
@@ -228,7 +228,7 @@ Each lab folder contains detailed documentation with:
 
 ### **Project Folders**
 - **Midterm_Project/README.md** — Heart disease prediction
-- **Final_Project/README.md** — Capstone project
+- **Final_Project/README.md** — Movie Recommendation System
 
 ---
 
@@ -266,7 +266,7 @@ Each lab folder contains detailed documentation with:
 | Lab 11 | ✅ Complete | Lab_11/ |
 | Lab 12 | ✅ Complete | Lab_12/ |
 | **Midterm Project** | ✅ Complete | Midterm_Project/ |
-| **Final Project** | 🔄 In Progress | Final_Project/ |
+| **Final Project** | ✅ Complete | Final_Project/ |
 | **Documentation** | ✅ Complete | (this folder) |
 
 ---
@@ -274,6 +274,6 @@ Each lab folder contains detailed documentation with:
 
 **Portfolio Created:** May 2026  
 **Documentation Status:** Complete ✅  
-**Final Project Status:** In Progress 🔄
+**Final Project Status:** ✅ Complete
 
-For detailed information, see **ML_COURSE_INDEX.md** or navigate to any individual lab folder.
+For detailed information, see **COURSE_INDEX.md** or navigate to any individual lab folder.
