@@ -2,7 +2,7 @@
 
 **Program:** Applied AI & Robotics | Houston City College  
 **Student:** Rich Fox  
-**Portfolio Updated:** May 6, 2026
+**Portfolio Updated:** July 11, 2026
 
 ---
 
@@ -74,13 +74,47 @@ A complete ML workflow from fundamentals to ethical deployment
 
 ---
 
+### ⚖️ **AI Applications & Ethics (ITAI 2372)**
+Applied AI across industries, grounded in real case studies
+
+**Location:** `Artificial Intel Applications/`
+
+**What you'll find:**
+- Module-by-module coverage of AI applications across healthcare, finance, smart cities, media, blockchain, retail, and government
+- Case studies: HSBC fraud detection, facial recognition in law enforcement, NOAA hurricane forecasting
+- Each industry write-up follows a consistent structure: Industry Overview, Current AI Trends, Ethical Implications, Future Trends, and Reflection
+- Original .docx submissions included alongside converted markdown versions
+
+**Start here:** `Artificial Intel Applications/README.md`
+
+**Key Topics:**
+- AI applications across healthcare, finance, retail, transportation, media, and government
+- Ethical and societal implications of AI (bias, privacy, transparency, accountability)
+- Blockchain integration with AI systems
+- Case study analysis of real-world AI deployments
+
+*In progress: Manufacturing (Module 11) and AGI (Module 12)*
+
+---
+
+## 📘 Additional Coursework
+
+Other courses completed as part of the Applied AI & Robotics program at Houston Community College, without dedicated portfolio folders:
+
+- **ITAI 1372** — AI in Cybersecurity
+- **COSC 1436** — Programming Fundamentals I (Python)
+- **ITSE 1346** — Database Theory and Design
+
+---
+
 ## 🎯 Portfolio at a Glance
 
 | Course | Duration | Labs | Projects | Focus |
 |---|---|---|---|---|
 | **Computer Vision** | ~120 hours | 12 | 1 (Object tracking) | Visual understanding → Autonomous agents |
 | **Machine Learning** | ~120 hours | 12 | 2 (Heart disease + Capstone) | Complete ML workflow → Ethical deployment |
-| **TOTAL** | ~240 hours | 24 | 3 | AI systems design & responsible deployment |
+| **AI Applications & Ethics** | In progress | 10 modules (through Module 10) | 3 case studies | Applied AI across industries → Ethics & governance |
+| **TOTAL (CV + ML)** | ~240 hours | 24 | 3 | AI systems design & responsible deployment |
 
 ---
 
@@ -338,9 +372,9 @@ Upon completing these courses, I can:
 ## 📝 Portfolio Maintenance
 
 This portfolio is a living document:
-- **Last Updated:** May 6, 2026
-- **Status:** Both courses complete; ML final project in progress
-- **Version:** 1.0 (Complete documentation of ITAI 1378 and ITAI 1371)
+- **Last Updated:** July 11, 2026
+- **Status:** Computer Vision and Machine Learning complete; ITAI 2372 (AI Applications & Ethics) in progress through Module 10
+- **Version:** 1.1 (Added ITAI 2372 coursework and Additional Coursework section)
 
 As I continue learning and building projects, this portfolio will evolve to include:
 - Advanced projects and specializations
@@ -352,7 +386,7 @@ As I continue learning and building projects, this portfolio will evolve to incl
 
 ## 🎉 Summary
 
-This portfolio represents **~240 hours of intensive study** in AI and machine learning, synthesized into **33 professional documentation files** covering **24 labs** and **3 projects**.
+This portfolio represents **~240+ hours of intensive study** in AI and machine learning, synthesized into **33+ professional documentation files** covering **24 labs**, **3 projects**, and applied AI coursework across 10+ industries (ITAI 2372).
 
 It demonstrates not just technical capability, but also:
 - **Critical thinking** about generalization and limitations
@@ -370,4 +404,4 @@ It demonstrates not just technical capability, but also:
 
 ---
 
-*Portfolio created: May 2026 | All documentation complete | Ready for professional use* ✅
+*Portfolio created: May 2026 | Last updated: July 2026 | ITAI 2372 in progress | Ready for professional use* ✅
