@@ -1,6 +1,6 @@
 # Rich Fox — AI & Computer Vision Portfolio
 
-**Course:** ITAI 1378 — Comp Vision-Artificial Inte 
+**Course:** ITAI 1378 — Comp Vision-Artificial Intelligence  
 **Institution:** Houston City College  
 **Program:** Applied AI & Robotics  
 **Instructor:** [Hardik Gohel](https://www.linkedin.com/in/hardik-gohel-researcher/)  
