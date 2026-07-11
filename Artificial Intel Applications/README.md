@@ -1,4 +1,10 @@
-# ITAI 2372 – Artificial Intel Applications
+# Rich Fox — Machine Learning Portfolio
+
+**Course:** ITAI 2372 – Artificial Intel Applications  
+**Institution:** Houston City College  
+**Program:** Applied AI & Robotics  
+**Instructor:** Prof. Sridhar Ganti  
+**Academic Year:** 2026–2027
 
 Coursework from Houston Community College's Applied AI & Robotics program, ITAI 2372. This course examines how AI is applied across industries — healthcare, finance, retail, transportation, media, blockchain, government, and more — along with the ethical and societal implications of those applications.
 
