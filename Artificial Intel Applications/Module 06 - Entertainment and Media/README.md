@@ -35,4 +35,5 @@
 AI in entertainment sits at a genuine tension point: the same generative techniques that democratize content creation and personalize the audience experience (recommendation engines, accessible composition/design tools) are the ones that make deepfakes and authorship disputes possible — meaning creative and technical fluency with these tools has to come paired with an equally deliberate focus on consent, attribution, and disclosure.
 
 ## Assignment(s)
-- Hands-on experiment (bonus): explore an AI content creation tool (e.g., a music, art, writing, or video generation tool from the Suggested Tools list), demonstrate its functionality, showcase a piece of content created with it, and reflect on its impact on content creators and its ethical implications
+- [A06_Entertainment_and_Media.md](./A06_Entertainment_and_Media.md) — Industry overview of AI applications, trends, ethical implications, and future outlook in Media and Entertainment.
+
