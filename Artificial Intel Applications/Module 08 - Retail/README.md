@@ -39,4 +39,4 @@
 AI in retail isn't a single technology bolt-on — it spans the entire value chain, from personalizing what a shopper sees on a screen to optimizing what a robot picks in a warehouse. The modules' implementation framework (assess → strategy → pilot → scale) matters as much as the technology itself: successful adoption depends on managing data quality, integration, and change management just as much as on the AI systems, with privacy, bias, and transparency built in from the start rather than addressed after deployment.
 
 ## Assignment(s)
-- No written assignment found in the source material for this module — lecture content only (update this section if an assignment file is added later)
+- [A08_Retail.md](./A08_Retail.md) — Industry overview of AI applications, trends, ethical implications, and future outlook in Retail.
