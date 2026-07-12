@@ -20,8 +20,8 @@ Coursework from Houston City College's Applied AI & Robotics program, ITAI 2372.
 | 6 | [Entertainment & Media](./Artificial%20Intel%20Applications/Module%2006%20-%20AI%20in%20Media%20and%20Entertainment/README.md) | A06 |
 | 7 | [Blockchain](./Artificial%20Intel%20Applications/Module%2007%20-%20AI%20and%20Blockchain%20Integration/README.md) | A07 |
 | 8 | [Retail](./Artificial%20Intel%20Applications/Module%2008%20-%20AI%20in%20Retail/README.md) | A08 |
-| 9 | Ethical & Societal Implications of AI | A09 (Facial Recognition in Law Enforcement) — *lecture README pending* |
-| 10 | Case Study: AI in Government & Public Sector | A10 (NOAA Hurricane Forecasting) — *lecture README pending* |
+| 9 | [Ethical & Societal Implications of AI](./Artificial%20Intel%20Applications/Module%2009%20-%20Ethical%20and%20Societal%20Implications/README.md) | A09 (Facial Recognition in Law Enforcement)  |
+| 10 | [Case Study: AI in Government & Public Sector](/Artificial%20Intel%20Applications/Module%2010%20-%20Case%20Study%20-%20Government%20and%20Public%20Sector/README.md) | A10 (NOAA Hurricane Forecasting) |
 | 11 | AI in Manufacturing | *in progress* |
 | 12 | AGI (Artificial General Intelligence) | *in progress* |
 
@@ -32,5 +32,5 @@ Each module folder contains a README summarizing Key Concepts, Tools & Technolog
 ## Status
 
 - **Modules 1–8:** lecture READMEs complete
-- **Modules 9–10:** assignments (A09, A10) complete; lecture-based README summaries pending source material
+- **Modules 9–10:** assignments (A09, A10) complete; No lecture
 - **Modules 11–12:** in progress, course not yet complete
