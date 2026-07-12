@@ -37,4 +37,5 @@
 Blockchain and AI are complementary in a specific, non-obvious way: AI needs trustworthy data and accountable decision-making to be useful at scale, and blockchain is built to provide exactly that — verifiable, tamper-proof data integrity and auditable decision trails — while AI in turn makes blockchain data more useful by extracting patterns, predictions, and risk insights from it. The Walmart and IPwe cases show this isn't theoretical: pairing an immutable ledger with AI-driven analysis turned slow, opaque processes (contamination tracing, patent valuation) into fast, transparent ones.
 
 ## Assignment(s)
-- No written assignment found in the source material for this module — lecture content only (update this section if an assignment file is added later)
+- [A07_Blockchain.md](./A07_Blockchain.md) — Industry overview of AI applications, trends, ethical implications, and future outlook in Blockchain.
+
