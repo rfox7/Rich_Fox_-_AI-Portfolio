@@ -46,4 +46,4 @@
 Smart cities aren't defined by any single flashy technology — they're defined by integration: sensors, vehicles, infrastructure, and data systems working together as a connected, predictive network rather than isolated tools bolted onto an old system. The real payoff (reduced emissions, faster emergency response, reclaimed commuting time) comes from that system-level connectivity, which is also exactly what makes privacy, security, and equity such central design requirements rather than afterthoughts.
 
 ## Assignment(s)
-- No formal written assignment found in the source material for this module — lecture content only (update this section if an assignment file is added later)
+- [A05_Smart_Cities_Reflections.md](./A05_Smart_Cities_Reflections.md) — Industry overview of AI applications, trends, ethical implications, and future outlook in healthcare
