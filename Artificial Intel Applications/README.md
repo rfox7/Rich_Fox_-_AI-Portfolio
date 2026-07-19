@@ -22,7 +22,7 @@ Coursework from Houston City College's Applied AI & Robotics program, ITAI 2372.
 | 8 | [Retail](./Module%2008%20-%20AI%20in%20Retail/README.md) | A08 |
 | 9 | [Ethical & Societal Implications of AI](./Module%2009%20-%20Ethical%20and%20Societal%20Implications/README.md) | A09 (Facial Recognition in Law Enforcement)  |
 | 10 | [Case Study: AI in Government & Public Sector](/Module%2010%20-%20Case%20Study%20-%20Government%20and%20Public%20Sector/README.md) | A10 (NOAA Hurricane Forecasting) |
-| 11 | AI in Manufacturing | *in progress* |
+| 11 | [Case Study: AI in Manufacturing] | A11 (BMW) |
 | 12 | AGI (Artificial General Intelligence) | *in progress* |
 
 Assignments A02–A08 follow a standard format: Industry Overview, Current AI Trends, Ethical Implications, Future Trends, and Reflection.
