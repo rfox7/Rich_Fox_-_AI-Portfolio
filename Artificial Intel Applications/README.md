@@ -17,7 +17,7 @@ Coursework from Houston City College's Applied AI & Robotics program, ITAI 2372.
 | 3 | [Healthcare & Agriculture](./Module%2003%20-%20Healthcare%20and%20Agriculture/README.md) | A03 |
 | 4 | [Finance](./Module%2004%20-%20Finance/README.md) | A04 (Industry Overview), A04 (HSBC Fraud Detection Case Study) |
 | 5 | [Smart Cities & Transportation](./Module%2005%20-%20Smart%20Cities%20and%20Transportation/README.md) | A05 |
-| 6 | [Entertainment & Media](./Module%2006%20-%20AI%20in%20Media%20and%20Entertainment/README.md) | A06 |
+| 6 | [Entertainment & Media](./Module%2006%20-%20Entertainment%20and%20Media/README.md) | A06 |
 | 7 | [Blockchain](./Module%2007%20-%20AI%20and%20Blockchain%20Integration/README.md) | A07 |
 | 8 | [Retail](./Module%2008%20-%20AI%20in%20Retail/README.md) | A08 |
 | 9 | [Ethical & Societal Implications of AI](./Module%2009%20-%20Ethical%20and%20Societal%20Implications/README.md) | A09 (Facial Recognition in Law Enforcement)  |
