@@ -22,7 +22,7 @@ This portfolio documents my comprehensive education in artificial intelligence a
 
 ---
 
-[**All about Rich Fox**](about_RichFox.md)
+[**All about Rich Fox**](/About_RichFox.md)
 
 ---
 
