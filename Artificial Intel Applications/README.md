@@ -32,5 +32,5 @@ Each module folder contains a README summarizing Key Concepts, Tools & Technolog
 ## Status
 
 - **Modules 1–8:** lecture READMEs complete
-- **Modules 9–10:** assignments (A09, A10, A11) complete; No lecture
-- **Module 12:** in progress, course not yet complete
+- **Modules 9–10:** assignments (A09, A10, A11, A12) complete; No lecture
+
