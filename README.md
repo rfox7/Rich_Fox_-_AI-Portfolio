@@ -22,6 +22,10 @@ This portfolio documents my comprehensive education in artificial intelligence a
 
 ---
 
+[**All about Rich Fox**](about_RichFox.md)
+
+---
+
 ## 📚 What's Inside
 
 ### 🖼️ **Computer Vision (ITAI 1378)**
