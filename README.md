@@ -113,7 +113,7 @@ Other courses completed as part of the Applied AI & Robotics program at Houston 
 |---|---|---|---|---|
 | **Computer Vision** | ~120 hours | 12 | 1 (Object tracking) | Visual understanding → Autonomous agents |
 | **Machine Learning** | ~120 hours | 12 | 2 (Heart disease + Capstone) | Complete ML workflow → Ethical deployment |
-| **AI Applications & Ethics** | In progress | 10 modules (through Module 10) | 3 case studies | Applied AI across industries → Ethics & governance |
+| **AI Applications & Ethics** | ~240 hours | 12 modules | 3 case studies | Applied AI across industries → Ethics & governance |
 | **TOTAL (CV + ML)** | ~240 hours | 24 | 3 | AI systems design & responsible deployment |
 
 ---
