@@ -16,6 +16,8 @@ NewsBot reads a news article and, in one step:
 4. **Pulls out key facts:** people, organizations, places, dates and money amounts
 5. **Gives a short summary of insights**, and flags articles it isn't sure about for a person to review
 
+It also comes with a simple **web app (Gradio)**: paste in any article, click Analyze, and see the category, tone and highlighted entities. No code needed.
+
 The notebook walks through every step (Modules 1–8 of the course) and then combines them into one reusable `NewsBotIntelligenceSystem` class that can process brand-new articles.
 
 ---
@@ -42,9 +44,11 @@ The notebook walks through every step (Modules 1–8 of the course) and then com
 1. Put `BBC News Train.csv` in the same folder as the notebook.
 2. Open the notebook and click **Run All**. The first cell installs any missing packages.
 
+The last code cell starts the **web app**. It appears inside the notebook and also prints a local web address you can open in your browser.
+
 The entity extraction step takes a few minutes because it processes all 1,440 full-length articles.
 
-**Main libraries:** pandas, scikit-learn, NLTK, spaCy (`en_core_web_sm`), matplotlib, seaborn, wordcloud, plotly
+**Main libraries:** pandas, scikit-learn, NLTK, spaCy (`en_core_web_sm`), matplotlib, seaborn, wordcloud, plotly, gradio
 
 ---
 
@@ -90,6 +94,7 @@ We both worked on the same notebook, passing versions back and forth and reviewi
   - fixed package install issues so the notebook runs on current NLTK versions
   - replaced pre-written findings text with results calculated from the data
   - updated the test articles to match the BBC categories and added an intentionally ambiguous article (Apple earnings: Tech or Business?)
+- **Web app:** built the Gradio interface (bonus) with category scores, tone, and entities highlighted in the article text
 - **Analysis and documentation:** wrote the Module 1 discussion answer, the analysis section after each module, the project summary, and this README
 
 ### Sergio Sanchez
@@ -113,7 +118,6 @@ We both worked on the same notebook, passing versions back and forth and reviewi
 **Future improvements**
 - Retrain on recent news from several countries, with original capitalization and headlines
 - Try a transformer model (such as BERT) for better handling of context and new topics
-- Add a simple Gradio web app so anyone can paste in an article and see the results
 - Track entities and sentiment over time to spot trends
 
 ---
