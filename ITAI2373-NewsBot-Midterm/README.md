@@ -4,6 +4,8 @@
 **Team:** Sergio Sanchez & Richard Fox
 **Houston City College – October 2026**
 
+🎥 **[Watch the video demo](https://drive.google.com/file/d/1th4jkh1uaIM5A3hTNEWviPoHIGbIPqTz/view?usp=sharing)**: a walkthrough of the system, a live demo on new articles using the web app, key charts and findings
+
 ---
 
 ## What It Does
@@ -76,6 +78,7 @@ The entity extraction step takes a few minutes because it processes all 1,440 fu
 |---|---|
 | `Midterm_NewsBot_Intelligence_System_Sergio_Sanchez_Richard_Fox_ITAI_2373.ipynb` | Complete notebook with all code, charts, outputs and written analysis |
 | `README.md` | This file |
+| [Video demo](https://drive.google.com/file/d/1th4jkh1uaIM5A3hTNEWviPoHIGbIPqTz/view?usp=sharing) | Video walkthrough and live demo (Google Drive) |
 
 The dataset is not included in this repository (Kaggle competition rules). Download it from the link above.
 
