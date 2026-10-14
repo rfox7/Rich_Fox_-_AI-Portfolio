@@ -94,7 +94,6 @@ We both worked on the same notebook, passing versions back and forth and reviewi
   - fixed package install issues so the notebook runs on current NLTK versions
   - replaced pre-written findings text with results calculated from the data
   - updated the test articles to match the BBC categories and added an intentionally ambiguous article (Apple earnings: Tech or Business?)
-- **Web app:** built the Gradio interface (bonus) with category scores, tone, and entities highlighted in the article text
 - **Analysis and documentation:** wrote the Module 1 discussion answer, the analysis section after each module, the project summary, and this README
 
 ### Sergio Sanchez
@@ -104,6 +103,7 @@ We both worked on the same notebook, passing versions back and forth and reviewi
 - **Performance:** sped up entity extraction by switching to spaCy's batch processing
 - **Final pipeline:** rebuilt the `NewsBotIntelligenceSystem` class so it calculates real sentiment and length features for new articles (the earlier version used placeholder zeros), and added confidence-based routing to human review
 - **Test articles:** wrote the Nvidia, Houston Astros and US Senate test cases
+- **Web app:** built the Gradio interface (bonus) with category scores, tone, and entities highlighted in the article text
 
 ---
 
