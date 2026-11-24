@@ -9,7 +9,7 @@ Final project for ITAI 2374 (Robot Operating System & Platform), Houston City Co
 
 **Team:** _[names and roles: Sensor & Perception, Control & Integration, Documentation & Presentation]_
 
-**Report:** _[link to the technical report]_ · **Demo video:** _[link]_
+**Report:** _[link to the technical report]_ · **Demo video:** _[[link to demo](https://drive.google.com/file/d/1qw8s8pYTEk8JYlpDaW2m0q1NxXwKjsUE/view?usp=sharing)]_
 
 ## Why plain Python and not ROS 2
 
@@ -25,7 +25,6 @@ sensing, deciding, acting, and logging.
 |---|---|
 | `pidog_patrol.py` | The patrol program, test modes, and marker maker. All settings are at the top. |
 | `analyze_runs.py` | Turns the log into one summary line per run plus a success rate. Runs on the dog or a laptop. |
-| `radar.py` | Radar web page: the dog sweeps its head and shows distance readings at `http://<pidog-ip>:8000` |
 | `pidog_markers.pdf` | The two markers to print: 0 = HOME, 1 = TURN AROUND (5×5 marker set) |
 
 ## How it works
