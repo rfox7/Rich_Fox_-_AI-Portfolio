@@ -9,7 +9,7 @@ Final project for ITAI 2374 (Robot Operating System & Platform), Houston City Co
 
 **Team:** _[names and roles: Sensor & Perception, Control & Integration, Documentation & Presentation]_
 
-**Report:** _[link to the technical report]_ · **Demo video:** _[[link to demo](https://drive.google.com/file/d/1qw8s8pYTEk8JYlpDaW2m0q1NxXwKjsUE/view?usp=sharing)]_
+**Report:** _[[Link to Report:](PiDog_Hallway_Patrol_Technical_Report.md)]_ · **Demo video:** _[[link to demo](https://drive.google.com/file/d/1qw8s8pYTEk8JYlpDaW2m0q1NxXwKjsUE/view?usp=sharing)]_
 
 ## Why plain Python and not ROS 2
 
