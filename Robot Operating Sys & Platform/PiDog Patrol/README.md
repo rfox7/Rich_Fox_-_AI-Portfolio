@@ -25,7 +25,6 @@ sensing, deciding, acting, and logging.
 |---|---|
 | `pidog_patrol.py` | The patrol program, test modes, and marker maker. All settings are at the top. |
 | `analyze_runs.py` | Turns the log into one summary line per run plus a success rate. Runs on the dog or a laptop. |
-| `radar.py` | Radar web page: the dog sweeps its head and shows distance readings at `http://<pidog-ip>:8000` |
 | `pidog_markers.pdf` | The two markers to print: 0 = HOME, 1 = TURN AROUND (5×5 marker set) |
 
 ## How it works
