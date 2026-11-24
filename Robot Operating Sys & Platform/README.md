@@ -11,7 +11,7 @@
 **Response Time:** ~48 hours for email and grading
 
 **Institution:** Houston City College – Applied AI & Robotics Program
-**Status:** 🔄 **IN PROGRESS**
+**Status:** ✅ **COMPLETE**
 
 ---
 
@@ -222,50 +222,43 @@ By the end of this course, you will be able to:
 
 ---
 
-## 📂 Folder Structure (To Be Completed)
+## 🐕 Final Project: PiDog Hallway Patrol
+
+**Team 5:** Rich Fox, Sergio Sanchez, Brandon Matias
+
+A SunFounder PiDog V2 patrols the hallway outside C145 on its own: it walks to a marker at the far end, turns around, and walks back home. On the way it stays near the middle of the hallway, stops for obstacles and people, steers around things in its path, warns people out loud, and photographs them. Every decision is logged so the results can be measured.
+
+- **Project folder:** [PiDog Patrol](PiDog%20Patrol/)
+- **Project README:** [PiDog Patrol/README.md](PiDog%20Patrol/README.md)
+- **Technical report:** [PiDog_Hallway_Patrol_Technical_Report.md](PiDog%20Patrol/PiDog_Hallway_Patrol_Technical_Report.md)
+
+**Results from 30 logged test runs:**
+
+| Measure | Result |
+|---|---|
+| Reached the far marker | 7 runs |
+| Full round trip | 2 runs (117 s and 140 s) |
+| Typical distance when stopping for an obstacle | 43 cm (48 cm setting), compared to 17 cm with the old 30 cm setting |
+| Times it tried to go around an obstacle | 17 |
+
+**Tools:** Python, OpenCV (ArUco markers, face detection), SunFounder `pidog` and `vilib` libraries, CSV logging and analysis
+
+---
+
+## 📂 Folder Structure
 
 ```
-Robot_Operating_System_Platform/
+Robot Operating Sys & Platform/
 ├── README.md (This file)
-├── COURSE_INDEX.md (Complete course overview)
-├── FILE_MANIFEST.txt (Inventory of all files)
-├── COMPLETION_SUMMARY.md (Progress tracking)
-│
-├── Module_1/
-│   └── README.md (Introduction to Robotics and Autonomous Systems)
-├── Module_2/
-│   └── README.md (Sensors and Perception)
-├── Module_3/
-│   └── README.md (Computer Vision and Image Processing)
-├── Module_4/
-│   └── README.md (Robot Kinematics and Motion)
-├── Module_5/
-│   └── README.md (Actuators and Control Systems)
-├── Module_6/
-│   └── README.md (Path Planning and Navigation)
-├── Module_7/
-│   └── README.md (Object Detection and Recognition)
-├── Module_8/
-│   └── README.md (Robot Learning and Behavior Classification)
-├── Module_9/
-│   └── README.md (Localization and Mapping)
-├── Module_10/
-│   └── README.md (ROS and Integration)
-├── Module_11/
-│   └── README.md (Human-Robot Interaction)
-├── Module_12/
-│   └── README.md (Autonomous Systems and Decision Making)
-├── Module_13/
-│   └── README.md (Robot Manipulation and Grasping)
-├── Module_14/
-│   └── README.md (Course Review and Modern Trends)
-├── Module_15/
-│   └── Final_Project_Part1_README.md
-├── Module_16/
-│   └── Final_Project_Submission_README.md
-│
-└── Notebooks/
-    └── (Implementation notebooks and lab code)
+├── MOD 00/   Module_00_Approved_Curriculum_README.md
+├── MOD 01/   Assignment 1 (Rich and Sergio), Module 1 README
+├── MOD 02/   Assignment 2
+├── MOD 03/   Lab 3, Assignment 3 (Brandon), Group 5 presentation
+├── MOD 05/   Lab 5
+├── Journal 9 10.docx
+├── Journal 11 12.docx
+├── Journal 13.docx
+└── PiDog Patrol/   Final project: code, README, technical report, test log
 ```
 
 ---
@@ -289,24 +282,24 @@ Robot_Operating_System_Platform/
 
 ## 📊 Course Progress Tracking
 
-| Module | Topic | Status | Lab | README |
+| Module | Topic | Status | Work | README |
 |---|---|---|---|---|
-| 1 | Introduction to Robotics & Autonomous Systems | ⏳ Pending | — | — |
-| 2 | Sensors and Perception | ⏳ Pending | — | — |
-| 3 | Computer Vision and Image Processing | ⏳ Pending | — | — |
-| 4 | Robot Kinematics and Motion | ⏳ Pending | — | — |
-| 5 | Actuators and Control Systems | ⏳ Pending | — | — |
-| 6 | Path Planning and Navigation | ⏳ Pending | — | — |
-| 7 | Object Detection and Recognition | ⏳ Pending | — | — |
-| 8 | Robot Learning and Behavior Classification | ⏳ Pending | — | — |
-| 9 | Localization and Mapping | ⏳ Pending | — | — |
-| 10 | ROS and Integration | ⏳ Pending | — | — |
-| 11 | Human-Robot Interaction | ⏳ Pending | — | — |
-| 12 | Autonomous Systems and Decision Making | ⏳ Pending | — | — |
-| 13 | Robot Manipulation and Grasping | ⏳ Pending | — | — |
-| 14 | Course Review and Modern Trends | ⏳ Pending | — | — |
-| 15 | Final Project (Part 1) | ⏳ Pending | — | — |
-| 16 | Final Project Submission | ⏳ Pending | — | — |
+| 1 | Introduction to Robotics & Autonomous Systems | ✅ Submitted | [A01](MOD%2001/A01_RichFox_ITAI_2374.docx) | [README](MOD%2001/Module_01_Introduction_Robotics_PiDog_README.md) |
+| 2 | Sensors and Perception | ✅ Submitted | [A02](MOD%2002/A02_RichFox_ITAI_2374.docx) | — |
+| 3 | Computer Vision and Image Processing | ✅ Submitted | [L03](MOD%2003/L03_RichFox_ITAI2374.docx), [Group 5 presentation](MOD%2003/Group5_A03_Presentation-1.pptx) | — |
+| 4 | Robot Kinematics and Motion | ✅ Completed | — | — |
+| 5 | Actuators and Control Systems | ✅ Submitted | [L05](MOD%2005/L05_RichFox_ITAI2374.docx) | — |
+| 6 | Path Planning and Navigation | ✅ Completed | — | — |
+| 7 | Object Detection and Recognition | ✅ Completed | — | — |
+| 8 | Robot Learning and Behavior Classification | ✅ Completed | — | — |
+| 9 | Localization and Mapping | ✅ Journal | [Journal 9–10](Journal%209%2010.docx) | — |
+| 10 | ROS and Integration | ✅ Journal | [Journal 9–10](Journal%209%2010.docx) | — |
+| 11 | Human-Robot Interaction | ✅ Journal | [Journal 11–12](Journal%2011%2012.docx) | — |
+| 12 | Autonomous Systems and Decision Making | ✅ Journal | [Journal 11–12](Journal%2011%2012.docx) | — |
+| 13 | Robot Manipulation and Grasping | ✅ Journal | [Journal 13](Journal%2013.docx) | — |
+| 14 | Course Review and Modern Trends | ✅ Completed | — | — |
+| 15 | Final Project (Part 1) | ✅ Complete | [PiDog Patrol](PiDog%20Patrol/) | [README](PiDog%20Patrol/README.md) |
+| 16 | Final Project Submission | ✅ Complete | [Technical report](PiDog%20Patrol/PiDog_Hallway_Patrol_Technical_Report.md) | — |
 
 ---
 
@@ -374,10 +367,10 @@ By the end of this course, you'll have:
 
 ## 🔗 Navigation
 
-- [← Back to Portfolio Home](../../PORTFOLIO_README_FINAL.md)
-- [Computer Vision Course](../Computer_Vision/README.md)
-- [Machine Learning Course](../Machine_Learning/ML_README.md)
-- [Natural Language Processing Course](../Natural_Language_Processing/NLP_README.md)
+- [← Back to Portfolio Home](../README.md)
+- [Computer Vision Course](../Computer%20Vision/README.md)
+- [Machine Learning Course](../Machine%20Learning/README.md)
+- [Natural Language Processing Course](../Natural%20Language%20Processing/README.md)
 
 ---
 
@@ -387,4 +380,4 @@ From sensors and perception to kinematics, control, SLAM, and human-robot intera
 
 ---
 
-*Status: Course Introduction Ready | Modules Pending | Final Project To Be Defined*
+*Status: Course complete | Final project: PiDog Hallway Patrol*

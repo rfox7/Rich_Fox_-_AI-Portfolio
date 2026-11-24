@@ -107,7 +107,6 @@ sudo python3 pidog_patrol.py --test-center    # check which way the head turns (
 sudo python3 pidog_patrol.py --test-turn      # tune TURN_STEPS_180
 sudo python3 pidog_patrol.py                  # run a patrol
 python3 analyze_runs.py                       # results for all runs so far
-sudo python3 radar.py                         # radar page at http://<pidog-ip>:8000
 ```
 
 Live camera view while the patrol runs: `http://<pidog-ip>:9000/mjpg`

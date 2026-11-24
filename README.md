@@ -8,7 +8,7 @@
 
 ## 🎓 Welcome to My AI/ML Portfolio
 
-This portfolio documents my comprehensive education in artificial intelligence and machine learning through two intensive courses at Houston Community College. It demonstrates technical depth, critical thinking about ethical AI, and real-world application of ML concepts.
+This portfolio documents my comprehensive education in artificial intelligence and machine learning through two intensive courses at Houston City College. It demonstrates technical depth, critical thinking about ethical AI, and real-world application of ML concepts.
 
 ---
 
@@ -18,7 +18,7 @@ This portfolio documents my comprehensive education in artificial intelligence a
 |---|---|
 | **GitHub** | [Rich Fox AI Portfolio](https://github.com/rfox7/Rich_Fox_-_AI-Portfolio) |
 | **LinkedIn** | [Rich Fox](https://www.linkedin.com/in/rich-fox-b952a85/) |
-| **Email** | [rfox72@gmail.com](rfox72@gmail.com) |
+| **Email** | [rfox72@gmail.com](mailto:rfox72@gmail.com) |
 
 ---
 
@@ -101,9 +101,31 @@ Applied AI across industries, grounded in real case studies
 
 ---
 
+### 🐕 **Robot Operating System & Platform (ITAI 2374)**
+Robotics on a real robot: a SunFounder PiDog V2 quadruped
+
+**Location:** `Robot Operating Sys & Platform/`
+
+**What you'll find:**
+- Assignments, labs and journals across the robotics pipeline: sensors, perception, control, ROS, human-robot interaction
+- Team final project: **PiDog Hallway Patrol**, an autonomous robot dog that patrols a school hallway
+- Technical report with results from 30 logged test runs
+- Ethical focus: safety around people, privacy when a robot takes photos, accessibility
+
+**Start here:** [`Robot Operating Sys & Platform/README.md`](Robot%20Operating%20Sys%20%26%20Platform/README.md) or the [PiDog Patrol project](Robot%20Operating%20Sys%20%26%20Platform/PiDog%20Patrol/README.md)
+
+**Key Topics:**
+- Sensing and perception (ultrasonic distance, camera, touch, IMU)
+- Computer vision on a robot (ArUco marker navigation, face detection and aiming)
+- Control loops (hallway centering, obstacle stops and detours)
+- Logging and measuring robot performance
+- Safety, privacy and responsible robotics
+
+---
+
 ## 📘 Additional Coursework
 
-Other courses completed as part of the Applied AI & Robotics program at Houston Community College, without dedicated portfolio folders:
+Other courses completed as part of the Applied AI & Robotics program at Houston City College, without dedicated portfolio folders:
 
 - **ITAI 1372** — AI in Cybersecurity
 - **COSC 1436** — Programming Fundamentals I (Python)
@@ -118,6 +140,7 @@ Other courses completed as part of the Applied AI & Robotics program at Houston 
 | **Computer Vision** | ~120 hours | 12 | 1 (Object tracking) | Visual understanding → Autonomous agents |
 | **Machine Learning** | ~120 hours | 12 | 2 (Heart disease + Capstone) | Complete ML workflow → Ethical deployment |
 | **AI Applications & Ethics** | ~120 hours | 12 modules | 3 case studies | Applied AI across industries → Ethics & governance |
+| **Robot Operating System & Platform** | ~120 hours | Labs + journals | 1 (PiDog Hallway Patrol) | Sensors & control → Autonomous robot |
 | **TOTAL (CV + ML)** | ~360 hours | 24 | 3 | AI systems design & responsible deployment |
 
 ---
@@ -367,7 +390,7 @@ Upon completing these courses, I can:
 - ITAI 1378 (Computer Vision): Patricia McManus
 - ITAI 1371 (Machine Learning): [Instructor Name]
 
-**Institution:** Houston Community College, Applied AI & Robotics Program
+**Institution:** Houston City College, Applied AI & Robotics Program
 
 **Resources:** scikit-learn, PyTorch, TensorFlow, Hugging Face, Kaggle, and countless open-source contributors
 
