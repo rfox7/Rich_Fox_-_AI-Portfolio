@@ -7,7 +7,10 @@ path, warns people out loud, takes their picture, and logs every decision to a C
 
 Final project for ITAI 2374 (Robot Operating System & Platform), Houston City College.
 
-**Team:** _[names and roles: Sensor & Perception, Control & Integration, Documentation & Presentation]_
+**Team:** Team 5
+* Rich Fox
+* Sergio Sanchez
+* Brandon Matias
 
 **Report:** _[[Link to Report:](PiDog_Hallway_Patrol_Technical_Report.md)]_ · **Demo video:** _[[link to demo](https://drive.google.com/file/d/1qw8s8pYTEk8JYlpDaW2m0q1NxXwKjsUE/view?usp=sharing)]_
 
@@ -58,9 +61,8 @@ the way is clear before walking again.
 
 **Going around obstacles.** If the path stays blocked, the dog looks left and right, picks the more open
 side, steps out to that side, walks past, and steps back in.
-_[describe step counts and how it decides]_
 
-**Getting unstuck.** _[describe both]_
+**Getting unstuck.** 
 - **Corner escape:** used when both sides are close (about 50–60 cm).
 - **Stall recovery:** used when the dog isn't making progress.
 
@@ -144,10 +146,10 @@ ending.
 
 The dog photographs people in a shared hallway, and some of them may be minors. We got permission before
 running it. The dog warns people with a spoken message, a bark, and a white flash before every photo.
-Photos stay on the dog and are deleted after the demo. _[confirm each of these is true]_
+Photos stay on the dog and are deleted after the demo.
 
 ## AI assistance
 
 Parts of this code and documentation were written with help from an AI assistant (Claude). Our team
 tested, tuned, and extended the code on the robot (going around obstacles, corner escape, stall
-recovery, spoken warnings) and ran all the tests. _[adjust to match who did what]_
+recovery, spoken warnings) and ran all the tests. 
