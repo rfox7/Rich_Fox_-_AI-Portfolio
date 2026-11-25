@@ -1,0 +1,14 @@
+# Secrets: never commit the real .env
+.env
+
+# Local databases and generated data
+data/sqlite/
+data/incoming/*.csv
+!data/incoming/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
