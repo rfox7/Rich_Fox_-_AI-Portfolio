@@ -2,13 +2,13 @@
 
 **Program:** Applied AI & Robotics | Houston City College  
 **Student:** Rich Fox  
-**Portfolio Updated:** July 30, 2026
+**Portfolio Updated:** November 25, 2026
 
 ---
 
 ## 🎓 Welcome to My AI/ML Portfolio
 
-This portfolio documents my comprehensive education in artificial intelligence and machine learning through two intensive courses at Houston City College. It demonstrates technical depth, critical thinking about ethical AI, and real-world application of ML concepts.
+This portfolio documents my comprehensive education in artificial intelligence and machine learning through a series of courses at Houston City College. It demonstrates technical depth, critical thinking about ethical AI, and real-world application of ML concepts.
 
 ---
 
@@ -123,6 +123,28 @@ Robotics on a real robot: a SunFounder PiDog V2 quadruped
 
 ---
 
+### 🧠 **Deep Learning (ITAI 2376)**
+From a single neuron to a self-correcting AI agent
+
+**Location:** `Deep Learning/`
+
+**What you'll find:**
+- Module work on language models, CNNs, backpropagation, NLP, and diffusion models, each with its own README
+- Midterm: a class-conditioned diffusion model trained on Fashion-MNIST (best validation loss 0.0709)
+- Final project: **PipelinePilot**, an AI agent that fixes messy data files, learns which fixes work through reinforcement learning, and loads clean rows into an Azure SQL warehouse (89.6% of rows loaded after 100 practice runs, up from 26%)
+- Safety built in at two levels: Python checks plus limited database permissions
+
+**Start here:** [`Deep Learning/README.md`](Deep%20Learning/README.md) or the [PipelinePilot project](Deep%20Learning/Final%20Project/README.md)
+
+**Key Topics:**
+- Neural network basics and convolutional neural networks
+- Backpropagation and gradient descent
+- Hugging Face vs. OpenAI GPT API (own it vs. rent it)
+- Diffusion models and U-Net architectures
+- AI agent design: memory, reasoning, tools, reinforcement learning, safety
+
+---
+
 ## 📘 Additional Coursework
 
 Other courses completed as part of the Applied AI & Robotics program at Houston City College, without dedicated portfolio folders:
@@ -141,6 +163,7 @@ Other courses completed as part of the Applied AI & Robotics program at Houston 
 | **Machine Learning** | ~120 hours | 12 | 2 (Heart disease + Capstone) | Complete ML workflow → Ethical deployment |
 | **AI Applications & Ethics** | ~120 hours | 12 modules | 3 case studies | Applied AI across industries → Ethics & governance |
 | **Robot Operating System & Platform** | ~120 hours | Labs + journals | 1 (PiDog Hallway Patrol) | Sensors & control → Autonomous robot |
+| **Deep Learning** | Fall 2026 | Module assignments + lab notebooks | 2 (Diffusion midterm + PipelinePilot agent) | Neural networks → Diffusion models → AI agents |
 | **TOTAL (CV + ML)** | ~360 hours | 24 | 3 | AI systems design & responsible deployment |
 
 ---
@@ -333,6 +356,12 @@ Each course has master documents:
 - **AutoML:** AutoGluon
 - **Tools:** Jupyter, Matplotlib, Seaborn
 
+### **Deep Learning Stack**
+- **Frameworks:** PyTorch, TensorFlow/Keras
+- **Language models:** Hugging Face Transformers, OpenAI API, Claude API
+- **Agent project:** Python, pandas, Azure SQL, SQLite, pytest
+- **Tools:** Google Colab (T4 GPU), Jupyter
+
 ### **Across Both**
 - **Languages:** Python 3
 - **Version Control:** Git/GitHub
@@ -399,9 +428,9 @@ Upon completing these courses, I can:
 ## 📝 Portfolio Maintenance
 
 This portfolio is a living document:
-- **Last Updated:** July 11, 2026
-- **Status:** Computer Vision and Machine Learning complete; ITAI 2372 (AI Applications & Ethics) in progress through Module 10
-- **Version:** 1.1 (Added ITAI 2372 coursework and Additional Coursework section)
+- **Last Updated:** November 25, 2026
+- **Status:** Deep Learning (ITAI 2376) complete. See each course folder's README for that course's status.
+- **Version:** 1.2 (Added ITAI 2376 Deep Learning coursework)
 
 As I continue learning and building projects, this portfolio will evolve to include:
 - Advanced projects and specializations
@@ -431,4 +460,4 @@ It demonstrates not just technical capability, but also:
 
 ---
 
-*Portfolio created: May 2026 | Last updated: July 2026 | Ready for professional use* ✅
+*Portfolio created: May 2026 | Last updated: November 2026 | Ready for professional use* ✅

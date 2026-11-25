@@ -24,6 +24,13 @@ I've spent two decades building the data infrastructure companies run on — SQL
 - YOLOv8n + EasyOCR pipeline achieving 90.7% mAP@0.5 on real-world plate imagery
 - **Mastered:** object detection, OCR integration, model tuning and evaluation metrics
 
+### Self-Correcting Data Pipeline Agent (Deep Learning)
+- Built PipelinePilot, an AI agent that takes a plain-English request, fixes problems in messy sales files, and loads clean rows into an Azure SQL warehouse
+- It learns which fix works for each problem using reinforcement learning: after 100 practice runs it loaded 89.6% of incoming rows, up from 26% at the start
+- Safety at two levels: Python request and SQL checks, plus a database login that cannot drop or delete; 40 automated tests pass
+- Also trained a diffusion model that generates clothing images and compared Hugging Face with the OpenAI API
+- **Mastered:** PyTorch, reinforcement learning, AI agent design, Azure SQL, LLM APIs (Claude, OpenAI), Hugging Face Transformers
+
 ### AI Ethics & Industry Case Studies
 - Analyzed AI adoption and ethics across finance, healthcare, government, retail, and smart cities
 - Case studies: AI fraud detection (HSBC), facial recognition in law enforcement, disaster response (FEMA)
@@ -41,6 +48,7 @@ I've spent two decades building the data infrastructure companies run on — SQL
 | **Machine Learning** | scikit-learn, KNN, SVD, recommender systems, model evaluation |
 | **Computer Vision** | YOLOv8 object detection, OCR (EasyOCR), real-world image pipelines |
 | **AI Ethics & Governance** | Bias & fairness analysis, regulatory comparison (US/EU/AU/JP), responsible deployment |
+| **Deep Learning & AI Agents** | CNNs, diffusion models, reinforcement learning, agent design, PyTorch, Hugging Face, OpenAI/Claude APIs, Azure SQL |
 | **AI in Cybersecurity** | AI-driven threat detection, security risk analysis, AI attack-surface awareness |
 | **Computer Virtualization** | VM creation & management across Azure, AWS, VMware, Hyper-V, VirtualBox |
 | **Data Engineering** (existing strength) | SSIS, SSAS, SSRS, T-SQL, Power BI, enterprise data warehousing |
