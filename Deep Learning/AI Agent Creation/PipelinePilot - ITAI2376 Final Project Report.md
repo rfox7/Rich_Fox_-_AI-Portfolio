@@ -10,7 +10,7 @@
 | Project option  | Option 2, Process Automation Agent                                                                                                                                    |
 | Group           | Rich Fox (solo project)                                                                                                                                               |
 | Group member    | Rich Fox                                                                                                                                                              |
-| Code repository | [github.com/rfox7/Rich_Fox\_-\_AI-Portfolio, Deep Learning/Final Project](https://github.com/rfox7/Rich_Fox_-_AI-Portfolio/tree/main/Deep%20Learning/Final%20Project) |
+| Code repository | [github.com/rfox7/Rich_Fox\_-\_AI-Portfolio, Deep Learning/AI Agent Creation](https://github.com/rfox7/Rich_Fox_-_AI-Portfolio/tree/main/Deep%20Learning/AI%20Agent%20Creation) |
 | Submission date | Dec 4, 2026                                                                                                                                                           |
 
 AI assistance: Claude (Anthropic) was used to help write and test code and to draft documentation. All design choices, testing, Azure setup and results were reviewed and run by the author.
