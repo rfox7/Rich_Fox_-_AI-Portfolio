@@ -6,7 +6,7 @@ Nov 24, 2026
 
 We built a hallway patrol for a SunFounder PiDog V2 robot dog. It walks down a school hallway from the C145 classroom, turns around at a paper marker on the far wall, walks back, and stops at a second marker at home. On the way it tries to stay in the middle of the hallway, stops or steers around obstacles, warns people and takes their picture, and records every decision in a log file.
 
-We logged 30 test runs over two days (November 16 and 18, 2026). The dog reached the far marker in 7 runs and completed the full round trip in 2. Raising the stop distance from 30 cm to 48 cm made the dog stop safely before obstacles: on the final version it stopped at a typical 43 cm, compared to 17 cm before, when it often ran almost into things.
+We logged 30 test runs over two days (November 16 and 18, 2026). The dog reached the far marker in 7 runs and completed the full round trip in 2. Raising the stop distance from 30 cm to 48 cm made the dog stop safely before obstacles: with the 48 cm setting it stopped at a typical 43 cm, compared to 17 cm before, when it often ran almost into things.
 
 **Team 5:** Rich Fox, Sergio Sanchez, Brandon Matias
 
@@ -69,7 +69,7 @@ Because the checks run in this order, a head pat or low battery always wins over
 
 ## Testing and results
 
-We tested in the hallway outside C145 and logged 30 runs: 11 on November 16 and 19 on November 18. Twenty of them lasted 30 seconds or more; the rest were short checks after a settings change. We tested in three stages, changing the program between each:
+We tested in the hallway outside C145 and logged 30 runs: 11 on November 16 and 19 on November 18. Twenty of them lasted 30 seconds or more; the rest were short checks after a settings change. We tested in three stages, changing the program between each. We finished the final version of `pidog_patrol.py` after these runs; it brings the stage C features together in one script.
 
 | Stage                     | Runs | What changed                                                                                                                        |
 |---------------------------|------|-------------------------------------------------------------------------------------------------------------------------------------|

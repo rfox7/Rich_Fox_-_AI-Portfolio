@@ -30,6 +30,8 @@ sensing, deciding, acting, and logging.
 | `analyze_runs.py` | Turns the log into one summary line per run plus a success rate. Runs on the dog or a laptop. |
 | `make_markers.py` | Makes the markers on its own (same as `pidog_patrol.py --make-markers`). |
 | `pidog_markers.pdf` | The two markers to print: 0 = HOME, 1 = TURN AROUND (5×5 marker set) |
+| `events.csv` | Log of our 30 test runs on November 16 and 18, used for the results in the report |
+| `PiDog_Hallway_Patrol_Technical_Report.md` | The technical report (also as a Word file), with `images/` for its diagram |
 
 ## How it works
 
@@ -40,7 +42,7 @@ Safety checks always come first:
 2. **Battery low?** Stop and sit.
 3. **Marker close?** Turn 180°.
 4. **Path blocked?** Stop, wait, and go around if it stays blocked.
-5. **Face in view?** Stop, warn, aim, and take a photo.
+5. **Person in view?** Stop, warn, aim, and take a photo.
 6. **Every 5 seconds:** check both walls and steer back toward the middle.
 7. **Otherwise:** keep walking.
 
@@ -56,9 +58,9 @@ the camera and sensors.
 measures the distance to each wall, and takes a small turn toward the middle if one side is closer. If one
 side reads farther than 250 cm (an open door or side hall), it skips that check.
 
-**Stopping.** The dog stops walking when anything is closer than `STOP_DISTANCE_CM` (48 cm) or when it sees
-a face. Its lights turn yellow and it says _"Please clear the path, patrol coming through."_ It waits until
-the way is clear before walking again.
+**Stopping.** The dog stops walking and its lights turn yellow when anything is closer than
+`STOP_DISTANCE_CM` (48 cm) or when it sees a person. For a person, it says _"Please clear the path, patrol
+coming through."_ and waits until they move. For an obstacle, it waits 3 seconds for the way to clear.
 
 **Going around obstacles.** If the path stays blocked, the dog looks left and right, picks the more open
 side, steps out to that side, walks past, and steps back in.
@@ -141,15 +143,15 @@ From 30 logged test runs on November 16 and 18, 2026 (full details in the report
 | Times it tried to go around an obstacle | 17 |
 | Photos taken / with face close-up | 24 / 3 |
 
-**Known problems:** many wall checks are skipped because of open doors, the face finder used for aiming
-often misses faces the camera already spotted, and runs stopped by unplugging the dog don't log an
-ending.
+**Known problems from testing:** many wall checks are skipped because of open doors, the face finder used
+for aiming often missed faces the camera had already spotted, and runs stopped by unplugging the dog
+don't log an ending.
 
 ## Ethics and privacy
 
-The dog photographs people in a shared hallway, and some of them may be minors. We got permission before
-running it. The dog warns people with a spoken message, a bark, and a white flash before every photo.
-Photos stay on the dog and are deleted after the demo.
+The dog photographs people in a shared hallway from floor level. We only photographed classmates (no
+minors), and we got permission before running it. The dog warns people with a spoken message, a bark, and a white flash before every photo.
+Photos stayed on the dog and were all deleted after the demo.
 
 ## AI assistance
 

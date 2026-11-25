@@ -3,8 +3,8 @@
 Summarize PiDog patrol runs (runs on the dog or any PC).
 
 Reads every log in the log folder:
-  - patrol_<date>_<time>.jsonl  one file per run (current pidog_patrol.py)
-  - events.csv                  older test runs (earlier versions of the script)
+  - events.csv                  all runs from pidog_patrol.py (one line per decision)
+  - patrol_<date>_<time>.jsonl  one file per run, from an earlier version of the script
 
   python3 analyze_runs.py                     # reads ~/patrol_logs
   python3 analyze_runs.py path/to/folder      # or a copy on your laptop
@@ -12,8 +12,9 @@ Reads every log in the log folder:
 
 Prints one row per run plus a success rate, and saves run_summary.csv in the log folder.
 
-The current script doesn't log how a run ended, so a run counts as "success" when the
-dog reached the HOME marker, and "no end record" otherwise.
+Each run's result comes from its run_end line. Runs with no run_end line (older versions,
+or the dog lost power) count as "success" if the dog reached the HOME marker, and
+"no end record" otherwise.
 """
 
 import csv
