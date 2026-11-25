@@ -226,7 +226,7 @@ By the end of this course, you will be able to:
 
 **Team 5:** Rich Fox, Sergio Sanchez, Brandon Matias
 
-A SunFounder PiDog V2 patrols the hallway outside C145 on its own: it walks to a marker at the far end, turns around, and walks back home. On the way it stays near the middle of the hallway, stops for obstacles and steers around them, and photographs people it sees. Every decision is logged so the results can be measured.
+A SunFounder PiDog V2 patrols the hallway outside C145 on its own: it walks to a marker at the far end, turns around, and walks back home. On the way it stays near the middle of the hallway, stops for obstacles and people, steers around things in its path, warns people out loud, and photographs them. Every decision is logged so the results can be measured.
 
 - **Project folder:** [PiDog Patrol](PiDog%20Patrol/)
 - **Project README:** [PiDog Patrol/README.md](PiDog%20Patrol/README.md)
