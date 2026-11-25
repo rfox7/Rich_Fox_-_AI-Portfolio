@@ -50,9 +50,13 @@ The tables are created by the admin, so `agent_user` doesn't own them and can't 
 
 **Proof (screenshots):** logged in as `agent_user`:
 
-<!-- Add screenshots here -->
-- `CREATE TABLE dw.test (id INT);` → *permission denied* (screenshot: `docs/images/deny_create.png`)
-- `DELETE FROM dw.sales;` → *permission denied* (screenshot: `docs/images/deny_delete.png`)
+`CREATE TABLE dw.test (id INT);` → permission denied:
+
+![Permission denied: CREATE TABLE](images/deny_create.png)
+
+`DELETE FROM dw.sales;` → permission denied:
+
+![Permission denied: DELETE](images/deny_delete.png)
 
 Credentials live only in `.env`, which is excluded from Git. The repo has a `.env.example` with placeholder values.
 

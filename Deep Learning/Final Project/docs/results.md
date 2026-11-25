@@ -93,9 +93,13 @@ The 200-row loss happened because the brand-new agent tried `skip_file` once on 
 ![Permission denied: create](images/deny_create.png)
 ![Permission denied: delete](images/deny_delete.png)
 
-## 7. Automated tests
+## 7. Language understanding (Claude)
 
-`py -m pytest`: **34 passed** (Windows, Python 3.14). The tests cover:
+With `claude-haiku-5-5` connected, the request *"Hey, can you take a look at the sales stuff that came in, but don't actually put it in the warehouse yet"* was read as a dry run (`parsed by LLM (claude-haiku-5-5)`). The agent fixed the usual problems with its learned strategies, reported 217 rows ready to load, and wrote nothing to the warehouse. Claude's reflection described the run correctly as a successful check and advised leaving rows with missing IDs rejected.
+
+## 8. Automated tests
+
+`py -m pytest`: **40 passed** (Windows, Python 3.14). The tests cover:
 
 - **SQL guard:** allowed and blocked statements.
 - **Request screening:** allowed, blocked and out-of-scope requests.
