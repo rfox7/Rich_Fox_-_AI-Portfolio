@@ -134,7 +134,7 @@ From a single neuron to a self-correcting AI agent
 - Final project: **PipelinePilot**, an AI agent that fixes messy data files, learns which fixes work through reinforcement learning, and loads clean rows into an Azure SQL warehouse (89.6% of rows loaded after 100 practice runs, up from 26%)
 - Safety built in at two levels: Python checks plus limited database permissions
 
-**Start here:** [`Deep Learning/README.md`](Deep%20Learning/README.md) or the [PipelinePilot project](Deep%20Learning/Final%20Project/README.md)
+**Start here:** [`Deep Learning/README.md`](Deep%20Learning/README.md) or the [PipelinePilot project](Deep%20Learning/AI%20Agent%20Creation/README.md)
 
 **Key Topics:**
 - Neural network basics and convolutional neural networks

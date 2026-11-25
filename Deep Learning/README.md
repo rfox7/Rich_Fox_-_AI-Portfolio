@@ -20,7 +20,7 @@ This course took me from how a single neuron works to building an AI agent that 
 | [Module 5](./MOD%2005/README.md) | NLP through the film *Arrival* | A05 report and slides |
 | [Module 9](./MOD%2009/README.md) | Diffusion models | Lab 9 course notebook |
 | [Midterm](./Midterm%20Creating%20Images%20with%20Diffusion%20Models/README.md) | Creating images with diffusion models | Trained Fashion-MNIST diffusion model, executed notebook, and 8-page report |
-| [Final Project](./Final%20Project/README.md) | PipelinePilot, a self-correcting data pipeline agent | Working agent with memory, reasoning, tools, reinforcement learning, and safety, plus a full report |
+| [AI Agent Creation (Final Project)](./AI%20Agent%20Creation/README.md) | PipelinePilot, a self-correcting data pipeline agent | Working agent with memory, reasoning, tools, reinforcement learning, and safety, plus a full report |
 
 This folder holds the work saved for Modules 2, 3, 4, 5, and 9, the midterm, and the final project. Each folder has a README with a summary, and the original files (`.pptx`, `.docx`, `.pdf`, `.ipynb`) sit next to it.
 
@@ -46,7 +46,7 @@ You give the agent a plain-English request like *"Load this week's sales files, 
 
 **Safety has two layers.** Python checks screen requests, allow-list SQL statements, and limit file access. Separately, the agent logs in as a database user that cannot drop, alter, or delete outside its staging area, so Azure SQL would refuse a bad statement even if one got past the Python checks.
 
-See the [Final Project README](./Final%20Project/README.md) for setup and usage, and the `docs/` folder there for architecture, learning, safety, data, and results.
+See the [AI Agent Creation README](./AI%20Agent%20Creation/README.md) for setup and usage, and the `docs/` folder there for architecture, learning, safety, data, and results.
 
 ## What I learned
 
@@ -78,7 +78,7 @@ Deep Learning/
 ├── MOD 09/                                     Diffusion lab notebook
 ├── Midterm Creating Images with Diffusion Models/
 │                                               notebook + report
-└── Final Project/                              PipelinePilot (code, tests, docs, report)
+└── AI Agent Creation/                          PipelinePilot, the final project (code, tests, docs, report)
 ```
 
 ## AI assistance
