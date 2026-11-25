@@ -168,6 +168,7 @@ class PipelineAgent:
 
         run.rows_rejected += len(rej_df)
         if dry_run:
+            run.rows_ready += len(df)
             self._say(f"Dry run: {name} would load {len(df)} rows")
             return
         staged = self._with_db_recovery(run, "stage", lambda: (self.sql.stage_clean(run.run_id, df, name),
@@ -225,7 +226,6 @@ class PipelineAgent:
             saved = safe_tool_call(self.memory.save_run, run)
             if not saved.ok:
                 self._say(f"Note: couldn't save run history ({saved.error_type})")
-        self._say(f"Reflection: {run.reflection}")
 
         fixes = [s for s in run.steps if s.strategy]
         lines = [
@@ -237,6 +237,9 @@ class PipelineAgent:
             lines.append("Fixes used:")
             lines += [f"  - {s.error_type}: {s.strategy}{' (exploring)' if s.explored else ''} "
                       f"-> reward {s.reward:+.2f}" for s in fixes]
+        if run.status == "checked":
+            lines.append(f"Dry run: {run.rows_ready} rows are ready to load, but nothing was written to the "
+                         "warehouse. Ask me to load the files when you're ready.")
         lines.append(f"What I learned: {run.reflection}")
         lines.append("Limits: sales CSVs from the incoming folder only; never deletes data, drops tables or shares credentials.")
         return AgentReport(run.run_id, run.status, "\n".join(lines), run.rows_loaded,

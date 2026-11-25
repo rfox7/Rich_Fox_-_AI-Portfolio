@@ -37,6 +37,7 @@ class RunMemory:
     files_seen: int = 0
     rows_loaded: int = 0
     rows_rejected: int = 0
+    rows_ready: int = 0      # dry run: good rows that WOULD have been loaded
     status: str = "running"
     reflection: str = ""
 

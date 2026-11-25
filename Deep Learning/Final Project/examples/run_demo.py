@@ -2,6 +2,7 @@
 
     py examples/run_demo.py
 
+0. Plain English      - Claude reads a loosely worded request (a dry run)
 1. Clean run          - files with no problems
 2. Dirty data         - the agent finds problems and picks fixes
 3. Database outage    - a tool fails; the agent retries and recovers
@@ -54,6 +55,11 @@ def main():
     # (Exploration is shown in training; see examples/train_bandit.py.)
     agent.bandit.epsilon = 0.0
     print("Agent ready (trained; exploration turned off for the demo).")
+
+    scene("Scene 0 - Plain-English request (Claude reads it)")
+    generate(files=1, rows=60, seed=7, start_id=930000)
+    print(agent.run("Hey, can you take a look at the sales stuff that came in, "
+                    "but don't actually put it in the warehouse yet").message)
 
     scene("Scene 1 - Clean run")
     for old in config.INCOMING_DIR.glob("sales_*.csv"):
