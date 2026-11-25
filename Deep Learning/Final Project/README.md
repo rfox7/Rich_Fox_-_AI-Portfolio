@@ -38,6 +38,11 @@ The agent:
 | Reinforcement learning | `src/agent/bandit.py`: epsilon-greedy bandit with rewards, decay, and user feedback |
 | Safety | `src/safety/`: request screening, SQL allow-list, file path limits, plus database permissions |
 
+## Report
+
+- [Project report (PDF, submission version)](PipelinePilot%20-%20ITAI2376%20Final%20Project%20Report.pdf): the condensed 8-page report
+- [Project report (full version)](PipelinePilot%20-%20ITAI2376%20Final%20Project%20Report.md): every section in full detail, with figures in `report_images/`
+
 ## Documentation
 
 - [Architecture](docs/architecture.md): components, data flow, tools, design decisions
