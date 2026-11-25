@@ -163,8 +163,8 @@ Other courses completed as part of the Applied AI & Robotics program at Houston 
 | **Machine Learning** | ~120 hours | 12 | 2 (Heart disease + Capstone) | Complete ML workflow → Ethical deployment |
 | **AI Applications & Ethics** | ~120 hours | 12 modules | 3 case studies | Applied AI across industries → Ethics & governance |
 | **Robot Operating System & Platform** | ~120 hours | Labs + journals | 1 (PiDog Hallway Patrol) | Sensors & control → Autonomous robot |
-| **Deep Learning** | Fall 2026 | Module assignments + lab notebooks | 2 (Diffusion midterm + PipelinePilot agent) | Neural networks → Diffusion models → AI agents |
-| **TOTAL (CV + ML)** | ~360 hours | 24 | 3 | AI systems design & responsible deployment |
+| **Deep Learning** | ~120 hours | Module assignments + lab notebooks | 2 (Diffusion midterm + PipelinePilot agent) | Neural networks → Diffusion models → AI agents |
+| **TOTAL (CV + ML)** | ~600 hours | 60 | 8 | AI systems design & responsible deployment |
 
 ---
 
