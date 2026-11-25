@@ -21,29 +21,6 @@ This course explores the principles, methods, and applications of robotics syste
 
 The course emphasizes both **foundational concepts** and **practical, hands-on skills** using contemporary tools and real-world robotic platforms — while highlighting ethical considerations and the evolving role of robotics in AI-driven systems.
 
-**Prerequisites:** MATH 1314, ITSC 1316 or COSC 1436, ITAI 1370, ITAI 1371, ITAI 1378, ITAI 2373
-
----
-
-## 🎯 Course Student Learning Outcomes (CSLOs)
-
-By the end of this course, you will be able to:
-
-1. **Define** key terminology in robotics, autonomous systems, and multimodal robotics
-2. **Explain** the robotics pipeline and its role within broader AI-automation workflows
-3. **Implement** sensor processing, feature extraction, and ML classifiers using Python libraries (ROS, OpenCV, scikit-learn, TensorFlow)
-4. **Interpret** kinematic models, sensor data, motion planning, and control systems to gain robotic insight
-5. **Critique** safety concerns, privacy issues, and societal impacts of robotic technologies, proposing mitigation strategies
-6. **Construct and present** an end-to-end autonomous or interactive robotic system leveraging pre-trained perception models
-
-### **Additional Learning Objectives**
-- Summarize fundamental ML concepts and types of learning (supervised, unsupervised, reinforcement)
-- Apply Python-based ML tools (Scikit-learn, Pandas, AutoGluon) to build, train, and evaluate models
-- Demonstrate proficiency in preparing datasets through cleaning, preprocessing, and feature engineering
-- Compare and evaluate ML models using appropriate metrics and validation methods
-- Critique fairness and bias issues in ML and propose mitigation strategies
-- Create and communicate applied ML solutions, maintaining a professional GitHub portfolio
-
 ---
 
 ## 📖 Course Structure — 16 Modules
@@ -307,25 +284,6 @@ Robot Operating Sys & Platform/
 
 **AI is now a core capability across nearly every industry** — healthcare, manufacturing, energy, logistics, finance, retail, government, and education. This course builds toward the **Associate of Applied Science (AAS) in Artificial Intelligence & Robotics**, an applied workforce degree for entry-level and early-career AI roles.
 
-### **Entry-Level Job Roles This Course Supports**
-- AI Technician / AI Systems Specialist
-- Applied AI or Junior AI Developer
-- Machine Learning or Computer Vision Technician
-- Automation & Intelligent Systems Specialist
-- AI Operations (AIOps) Associate
-- Healthcare AI Systems Support Specialist
-- Manufacturing AI / Smart Factory Technician
-- Logistics & Supply Chain AI Analyst
-
-### **Wages & Career Growth**
-| Level | Salary Range |
-|---|---|
-| Entry-level | $65,000–$90,000 annually |
-| Mid-career applied AI | $90,000–$140,000+ |
-| Hourly technical roles | $35–$75/hour |
-
-**Industry Shift:** The workforce is moving from traditional software-only roles toward AI-enabled professionals who can deploy, operate, and responsibly use AI systems in real-time.
-
 ---
 
 ## 🎓 Instructor & Contact Information
@@ -339,29 +297,6 @@ Robot Operating Sys & Platform/
 **Department Chair (for escalated concerns):**
 Liene Joshua Lo — liene.lo@hccs.edu | 713-718-2279 | Office: C.152
 
----
-
-## 📌 Important Course Policies Recap
-
-- **Grading:** A (90%+), B (80-89%), C (70-79%), D (60-69%), F (<60%)
-- **Weight breakdown:** Written Assignments (15%), Exams/Quizzes (40%), In-Class Activities (25%), Final Exam (20%), Extra Credit (2%)
-- **Time commitment:** Expect at least 2x hours outside class studying/completing assignments as time spent in class
-- **AI Use:** Permitted for documentation/portfolio only — **not** for lab questions or journals
-- **Academic Integrity:** Per HCC Student Procedures — see HCC Student Handbook
-
----
-
-## 🚀 What You'll Build
-
-By the end of this course, you'll have:
-
-✅ Hands-on experience with ROS, Gazebo, OpenCV, and ML frameworks
-✅ Sensor processing and perception pipelines
-✅ Object detection and recognition systems
-✅ Path planning and SLAM implementations
-✅ A complete end-to-end autonomous or interactive robotic system
-✅ A professional GitHub portfolio documenting your robotics journey
-✅ Critical understanding of ethics, safety, and societal impact in robotics
 
 ---
 
