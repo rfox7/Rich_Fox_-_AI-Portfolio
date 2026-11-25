@@ -48,7 +48,10 @@ def make_rows(n: int, start_id: int, rng: random.Random, rates: dict | None = No
             row[1] = _bad_date(d, rng)
         if rng.random() < rates["type_mismatch"]:
             col = rng.choice([4, 5])
-            row[col] = rng.choice([f"${row[5]}", f"{int(row[4]):,}", "twelve"]) if col == 5 else rng.choice(
+            # price: "$12.50" can be fixed; "12.50 USD" and "twelve" can't
+            # quantity: "1,200" (a bulk order with a thousands separator) can be fixed; "twelve" can't;
+            #           " 7 " is padded with spaces, which the CSV reader already handles
+            row[col] = rng.choice([f"${row[5]}", f"{row[5]} USD", "twelve"]) if col == 5 else rng.choice(
                 [f"{int(row[4]) * 100:,}", "twelve", f" {row[4]} "])
         if rng.random() < rates["missing_value"]:
             row[rng.choice([0, 2])] = ""

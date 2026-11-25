@@ -43,6 +43,7 @@ The agent:
 - [Architecture](docs/architecture.md): components, data flow, tools, design decisions
 - [How it learns](docs/learning.md): rewards, the bandit, exploration, feedback
 - [Safety](docs/safety.md): both safety layers, fallbacks, transparency, known limits
+- [The data](docs/data.md): the synthetic sales files, their columns, and the planted problems
 - [Results](docs/results.md): learning curve and evaluation numbers
 
 ## Architecture
