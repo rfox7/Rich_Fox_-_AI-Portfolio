@@ -4,7 +4,7 @@ Nov 24, 2026
 
 ## Summary
 
-We built a hallway patrol for a SunFounder PiDog V2 robot dog. It walks down a school hallway from the C145 classroom, turns around at a paper marker on the far wall, walks back, and stops at a second marker at home. On the way it tries to stay in the middle of the hallway, stops or steers around obstacles, warns people and takes their picture, and records every decision in a log file.
+We built a hallway patrol for a SunFounder PiDog V2 robot dog. It walks down a school hallway from the C145 classroom, turns around at a paper marker on the far wall, walks back, and stops at a second marker at home. On the way it tries to stay in the middle of the hallway, stops for obstacles and steers around them, takes pictures of people it sees, and records every decision in a log file.
 
 We logged 30 test runs over two days (November 16 and 18, 2026). The dog reached the far marker in 7 runs and completed the full round trip in 2. Raising the stop distance from 30 cm to 48 cm made the dog stop safely before obstacles: on the final version it stopped at a typical 43 cm, compared to 17 cm before, when it often ran almost into things.
 
@@ -12,7 +12,7 @@ We logged 30 test runs over two days (November 16 and 18, 2026). The dog reached
 
 ## Problem statement and goals
 
-A small legged robot has to move through a real school hallway on its own: no map, no GPS, a floor that makes its feet slip, and people and backpacks in the way. The PiDog has no wheel encoders, so it can't count how far it has gone. It has a camera, a forward-facing ultrasonic distance sensor in its head, a touch sensor, and a speaker.
+A small legged robot has to move through a real school hallway on its own: no map, no GPS, a floor that makes its feet slip, and people and backpacks in the way. The PiDog has no wheel encoders, so it can't count how far it has gone. It has a camera and a forward-facing ultrasonic distance sensor in its head, and a touch sensor on top.
 
 Our goals were for the dog to:
 
@@ -22,7 +22,7 @@ Our goals were for the dog to:
 
 3. Stop before it runs into anything, and get around obstacles when it can.
 
-4. Notice people, warn them, and take their picture.
+4. Notice people and take their picture.
 
 5. Stop instantly when someone pats its head.
 
@@ -34,13 +34,12 @@ Our goals were for the dog to:
 
 | Part                                   | What we used it for                                                    |
 |----------------------------------------|------------------------------------------------------------------------|
-| Raspberry Pi with SunFounder Robot HAT | Runs the program; powers the servos, speaker and lights                |
+| Raspberry Pi with SunFounder Robot HAT | Runs the program and powers the servos                                 |
 | 12 servos (legs, head, tail)           | Walking, turning, sitting; head turns for wall checks and photo aiming |
 | Camera in the head                     | Reading markers, finding faces, taking photos                          |
 | Ultrasonic sensor in the head          | Distance ahead, and to each wall when the head turns                   |
 | Touch sensor on the head               | Emergency stop                                                         |
-| Speaker and light strip                | Bark, spoken warning, flash before photos, status colors               |
-| Battery                                | Power; voltage is checked so the dog can sit before it runs flat       |
+| Battery                                | Power; voltage is logged at the start of each run                      |
 | 2 printed ArUco markers                | Turnaround point at the far wall, and home                             |
 
 **Software.** One Python program, `pidog_patrol.py`, built on SunFounder's `pidog` and `vilib` libraries and OpenCV. It runs one loop that reads the sensors, decides what to do in a fixed order of priority, and acts. Safety checks always come first.
@@ -49,27 +48,27 @@ Our goals were for the dog to:
 
 *Software design: sense, decide, act, log*
 
-Because the checks run in this order, a head pat or low battery always wins over everything else, and the dog never looks for a photo while it's about to bump into something. \[Check that this order matches your team's final code.\]
+Because the checks run in this order, a head pat always wins over everything else, and the dog deals with anything in its path before it looks for people to photograph.
 
 ## Methods
 
-**Navigation with markers.** We print two ArUco markers, square black-and-white codes that OpenCV can read in a camera image. Marker 1 is taped on the wall at the far end of the hallway; marker 0 (HOME) stands on a small cardboard tent behind the start spot. The dog walks forward until the next marker it expects looks big enough in the camera, then turns 180° with 8 turning steps. Using the marker's width in pixels is a simple way to judge distance without a map. Over testing we lowered the trigger width from 90 pixels to 18 and switched to a 5×5 marker set, so the dog could see and react to the marker from farther away.
+**Navigation with markers.** We print two ArUco markers, square black-and-white codes that OpenCV can read in a camera image. Marker 1 is taped on the wall at the far end of the hallway; marker 0 (HOME) stands on a small cardboard tent behind the start spot. The dog walks forward until the next marker it expects looks big enough in the camera. It then keeps stepping forward until the distance sensor reads about 24 cm, and turns 180° with 8 turning steps. At home it turns around once more, so it ends facing the way it started, and sits. Using the marker's width in pixels is a simple way to judge distance without a map. Over testing we lowered the trigger width from 90 pixels to 18 and switched to a 5×5 marker set, so the dog could see and react to the marker from farther away.
 
-**Staying in the middle of the hallway.** Every few seconds the dog turns its head about 75° left and right and takes three ultrasonic readings on each side (we use the middle value to ignore bad readings). If one wall is more than 15 cm closer than the other, it takes one small turn away from it. If either side reads more than 250 cm, it assumes it's passing an open door or side hall and skips that check.
+**Staying in the middle of the hallway.** Every few seconds the dog turns its head about 75° left and right and takes an ultrasonic reading on each side. If one wall is more than 15 cm closer than the other, it takes one small turn away from it. If either side reads more than 250 cm, it assumes it's passing an open door or side hall and skips that check.
 
-**Stopping for obstacles and people.** The dog stops walking when the sensor reads less than the stop distance (48 cm in the final version) or the camera sees a face, and it waits until the way stays clear. People hear a spoken warning: "Please clear the path, patrol coming through." *\[confirm wording and when it plays\]*
+**Stopping for obstacles.** The dog stops walking as soon as the sensor reads less than the stop distance (48 cm in the final version), then goes around whatever is in the way.
 
-**Going around obstacles.** If something stays in the way, the dog looks left and right, picks the more open side, steps out to that side, walks past, and steps back in. The log records how many steps it took out, past, and back. Two other recovery behaviors appear in the log: **corner escape**, used when both sides are close (about 50–60 cm), and **stall recovery**, used when the dog doesn't seem to be making progress. *\[describe exactly how your team's versions of these work\]*
+**Going around obstacles.** After stopping, the dog looks left and right and picks the more open side. It turns 3 steps toward that side and walks up to 3 steps out, turns back parallel to the hallway and walks up to 7 steps past the obstacle, then angles back toward the middle and straightens out. Before every forward step it checks the distance sensor again and skips the step if something is in the way. The log records how many steps it took out, past, and back. Two other recovery behaviors appear in our test log, **corner escape** (when both sides were close) and **stall recovery** (when the dog wasn't making progress); we tried them during testing but left them out of the final version.
 
-**Photos.** When it sees a face, the dog stops, flashes its lights white, and barks once. It then nudges its head until the face is in the middle of the picture, and saves the full photo plus a close-up of the face. It waits 15 seconds before taking another photo, so it doesn't photograph the same person over and over.
+**Photos.** When the camera detects a person, the dog stops, tilts its head up 20°, and nudges its head up to 10 times to bring their face to the middle of the picture. It saves the full photo, plus a close-up of the face when it found one. It waits 15 seconds before taking another photo, so it doesn't photograph the same person over and over. The final version gives no sound or light warning before a photo.
 
-**Safety.** Patting the head stops the dog and makes it sit, at any point. It also stops and sits if the battery drops below 6.6 V, or after 45 minutes. A team member walked beside the dog on every run.
+**Safety.** Patting the head stops the dog and makes it sit, at any point. It also stops and sits after 45 minutes. The battery voltage is logged at the start of each run. A test version also stopped when the battery dropped below 6.6 V, but the final version doesn't check the battery during a run. A team member walked beside the dog on every run.
 
-**Logging.** Every decision is written as one line to a CSV file: when it happened, which run, what happened, and the details (wall distances, marker size, stop distance and so on). A separate script, `analyze_runs.py`, turns the log into one summary line per run.
+**Logging.** Every decision is written as one line to a log file: when it happened, what happened, and the details (wall distances, marker size, stop distance and so on). The test runs in this report were logged to a single CSV file; the final version writes a separate file for each run. A separate script, `analyze_runs.py`, reads both formats and turns them into one summary line per run.
 
 ## Testing and results
 
-We tested in the hallway outside C145 and logged 30 runs: 11 on November 16 and 19 on November 18. Twenty of them lasted 30 seconds or more; the rest were short checks after a settings change. We tested in three stages, changing the program between each:
+We tested in the hallway outside C145 and logged 30 runs: 11 on November 16 and 19 on November 18. Twenty of them lasted 30 seconds or more; the rest were short checks after a settings change. We tested in three stages, changing the program between each. We finished the final version of the program after these tests, so a few behaviors in the test versions (spoken warning, corner escape, stall recovery, low-battery stop) are not in the final code.
 
 | Stage                     | Runs | What changed                                                                                                                        |
 |---------------------------|------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -96,7 +95,7 @@ In stage B the dog kept moving for a moment after it decided to stop, because st
 
 **Photos.** The dog took 24 photos. Only 3 have a face close-up, meaning the aiming step found a face in only 3. The camera's face trigger and the aiming step's face finder disagree often; see Limitations.
 
-**Safety stops.** Four runs were ended with a head pat. The low-battery stop worked once, at 6.22 V. Starting battery ranged from 7.0 to 8.6 V.
+**Safety stops.** Four runs were ended with a head pat. The low-battery stop in the test version worked once, at 6.22 V. Starting battery ranged from 7.0 to 8.6 V.
 
 **Log problems.** Only 7 of the 30 runs wrote an end record. The others most likely ended by unplugging or a crash. One section of the log file was filled with empty bytes, which happens when power is cut while the file is being written. We cleaned these out before analyzing.
 
@@ -120,16 +119,18 @@ In stage B the dog kept moving for a moment after it decided to stop, because st
 |---------------------------------|----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Low success rate                | 2 full round trips; far marker reached in 7 runs                                 | More test runs with settings fixed, so results can be compared fairly                                                               |
 | One distance sensor             | 58% of wall checks skipped because of open doors and side halls                  | Follow just one wall when the other is out of range, or add side sensors                                                            |
-| Two face finders disagree       | Photo triggered 24 times, face found for aiming only 3 times                     | Use one face detector for both deciding and aiming                                                                                  |
+| Face aiming rarely works        | Photo triggered 24 times, face found for aiming only 3 times                     | Check which names the camera library uses for face data (`face_n` vs `human_n`) and use one face detector for both deciding and aiming |
 | Only sees faces                 | People walking away aren't seen until they're inside the stop distance           | Add a person-shape (body) detector                                                                                                  |
-| Runs don't always log an ending | 23 of 30 runs have no end record; one part of the log was damaged by a power cut | Save the log after every line and log runs that crash                                                                               |
+| Runs don't always log an ending | 23 of 30 runs have no end record; one part of the log was damaged by a power cut; the final version never logs how a run ended | Log the result at the end of every run, including head-pat and Ctrl+C stops |
+| No low-battery stop | The final version only logs the battery at the start of a run | Check the battery during the run and sit when it runs low |
+| No warning before photos | The final version takes photos without a sound or light | Bring back the spoken warning and flash, or ask before taking a photo |
 | Not built on ROS 2              | The course checklist asks for ROS 2 topics and services                          | Split the program into ROS 2 nodes (sensors, vision, decisions, logging) once ROS 2 can be installed without risk to the shared dog |
 
 ## Ethics reflection
 
-1. **How did the robot make decisions responsibly?** It stops before it moves closer than 48 cm, waits for people instead of pushing past, warns them out loud, and stops the moment someone pats its head. A person walked with it on every run.
+1. **How did the robot make decisions responsibly?** It stops before it gets closer than 48 cm to anything, steers around obstacles instead of pushing through, and stops the moment someone pats its head. A person walked with it on every run.
 
-2. **Were there safety or privacy concerns?** It photographs people in a shared hallway without asking first. The bark and white flash warn people before each photo. One major concern is that we babysat our PiDog in the hallways so that no one accidentally tripped over the dog running around. Also, the dog is taking pictures of people from the ground. We made a conscious effort to make sure that we only photographed people who were in our class (no minors), and stopped the program if any women were in the video area wearing a skirt or dress.
+2. **Were there safety or privacy concerns?** It photographs people in a shared hallway without asking first. One major concern is that we babysat our PiDog in the hallways so that no one accidentally tripped over the dog running around. Also, the dog is taking pictures of people from the ground. We made a conscious effort to make sure that we only photographed people who were in our class (no minors), and stopped the program if any women were in the video area wearing a skirt or dress.
 
 3. **How could the design be more accessible or inclusive?** First off, this project is great for an academic project, but using a PiDog for surveillance like this is not really practical for real-life. The face detector only works when someone faces the camera, and if people are in wheelchairs or walkers, it's probably not going to see the faces correctly. A more practical deployment for a project like this would either be a drone with a mounted camera, or a series of cameras mounted on servos to "look around". If we were to stick with the PiDog, we would need to run more tests with different sized people and people with disabilities, to test it better.
 
@@ -145,6 +146,6 @@ In stage B the dog kept moving for a moment after it decided to stop, because st
 
 - OpenCV. *Cascade classifier (face detection).* https://docs.opencv.org/4.x/db/d28/tutorial_cascade_classifier.html
 
-- Code repository: *\[add GitHub link\]*
+- Code repository: https://github.com/rfox7/Rich_Fox_-_AI-Portfolio/tree/main/Robot%20Operating%20Sys%20%26%20Platform/PiDog%20Patrol
 
 **AI use:** Parts of the code and the first draft of this report were written with help from an AI assistant (Claude). The team tested, tuned and changed the code on the robot, ran all tests, and wrote the ethics reflection.

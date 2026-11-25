@@ -31,6 +31,7 @@ The agent:
 | Memory system | `src/agent/memory.py` (short-term run memory + long-term tables in the `agent` schema) |
 | Reasoning component | `src/agent/reasoning.py` (plan), `src/agent/core.py` (ReAct-style fix loop) |
 | Output generation | `src/agent/core.py` (`_finish`): report, reasoning trace, reflection |
+| Language-based planning | `src/agent/llm.py` + `reasoning.py`: Claude (or OpenAI) parses the request and writes reflections, with a rule-based fallback |
 | Agent patterns | Plan-then-execute + ReAct (thought → action → observation) + reflection |
 | Tools (3) | `file_tool` (CSV files), `data_tool` (pandas), `sql_tool` (Azure SQL / SQLite) |
 | Tool error handling | `src/tools/base.py` (`safe_tool_call`: every call returns a result, never crashes) |
@@ -130,9 +131,11 @@ Leave `DB_BACKEND=sqlite` in `.env`. The database files are created in `data/sql
 3. In `.env`, set `DB_BACKEND=azure` and fill in the `AZURE_SQL_*` values, using `agent_user`, not the admin.
 4. Test the connection: `py test_connection.py`
 
-### Optional: LLM
+### Optional: LLM (Claude, OpenAI or Azure OpenAI)
 
-Set `OPENAI_API_KEY` (or the `AZURE_OPENAI_*` values) to let an LLM (default `gpt-4o-mini`) parse requests and write the reflection notes. Without a key the agent uses rule-based versions of both and works the same way.
+Set `ANTHROPIC_API_KEY` in `.env` to let Claude (default `claude-haiku-5-5`) parse requests and write the reflection notes. `OPENAI_API_KEY` or the `AZURE_OPENAI_*` values work too; `LLM_PROVIDER` picks one. Without a key the agent uses rule-based versions of both and works the same way. The trace shows which was used, e.g. `parsed by LLM (claude-haiku-5-5)`.
+
+Only short summaries are sent to the LLM (the request text, fix names, counts, rewards), never the contents of the data files.
 
 ## Usage
 
@@ -161,7 +164,7 @@ src/
     reasoning.py         request parsing, planning, reflection (LLM optional)
     memory.py            short-term run memory + long-term history
     bandit.py            epsilon-greedy learner
-    llm.py               optional OpenAI / Azure OpenAI client
+    llm.py               optional LLM client: Claude, OpenAI or Azure OpenAI
   tools/
     base.py              safe_tool_call wrapper + error types
     file_tool.py         find and read CSVs (incoming folder only)

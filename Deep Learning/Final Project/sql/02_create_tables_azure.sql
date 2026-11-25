@@ -71,5 +71,5 @@ GO
 
 -- Guardrail check (run while logged in as agent_user). Both should FAIL with
 -- a permission error -- screenshot them for the report's safety section:
---   CREATE TABLE dw.test (id INT);
---   DELETE FROM dw.sales;
+   CREATE TABLE dw.test (id INT);
+   DELETE FROM dw.sales;

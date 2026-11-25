@@ -34,6 +34,10 @@ MAX_FILE_MB = float(os.getenv("MAX_FILE_MB", "25"))
 
 # --- LLM (optional) -----------------------------------------------------------
 # Without a key the agent uses its rule-based parser, planner and reflection.
+# Provider: "anthropic" (Claude), "openai" or "azure"; blank = first key found.
+LLM_PROVIDER = os.getenv("LLM_PROVIDER", "").strip().lower()
+ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
+ANTHROPIC_MODEL = os.getenv("ANTHROPIC_MODEL", "claude-haiku-5-5")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
 AZURE_OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT", "")
 AZURE_OPENAI_API_KEY = os.getenv("AZURE_OPENAI_API_KEY", "")

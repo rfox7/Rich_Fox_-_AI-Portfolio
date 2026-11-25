@@ -1,6 +1,7 @@
 pandas>=2.0
 python-dotenv>=1.0
 pyodbc>=5.0          # Azure SQL (also needs Microsoft ODBC Driver 18 for SQL Server)
-openai>=1.40         # optional: LLM request parsing and reflection
+anthropic>=0.40      # optional: Claude for request parsing and reflection
+openai>=1.40         # optional: OpenAI / Azure OpenAI instead of Claude
 matplotlib>=3.7      # learning curve chart
 pytest>=8.0

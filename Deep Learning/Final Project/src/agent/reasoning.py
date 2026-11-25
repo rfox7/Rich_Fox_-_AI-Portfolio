@@ -41,7 +41,7 @@ def parse_request(text: str) -> Task:
             pattern = str(d.get("file_pattern") or "*.csv")
             if not re.fullmatch(r"[\w\-\*\?\.]+", pattern):
                 pattern = "*.csv"
-            return Task(intent, pattern, bool(d.get("dry_run")), "parsed by LLM")
+            return Task(intent, pattern, bool(d.get("dry_run")), f"parsed by {llm.name()}")
         except (ValueError, TypeError):
             pass
     return _parse_rules(text)
@@ -82,7 +82,7 @@ def reflect(run, past_notes: list[str]) -> str:
         json.dumps({"run": summary, "past_notes": past_notes[:3]}), max_tokens=150,
     )
     if note:
-        return note.strip()
+        return note.strip() + f" [written by {llm.name()}]"
 
     fixes = [(f"{s.error_type}->{s.strategy}", s.reward) for s in run.steps if s.strategy]
     good = sorted({name for name, r in fixes if r > 0})
